@@ -47,6 +47,16 @@
      </execution>
     </executions>
    </plugin>
-  </plugins>
+  <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat8-maven-plugin</artifactId>
+                    <version>2.2</version>
+                    <configuration>
+                        <url>http://localhost:8081/manager/html</url>
+                        <server>TomcatServer</server>
+                        <path>/SpringExample</path>
+                    </configuration>
+                </plugin>
+				  </plugins>
  </build>
 </project>
